@@ -21,3 +21,16 @@ Bonus:
 2- cliccando sul testo dell’item, invertire il valore della proprietà done del task corrispondente (se done era uguale a false, impostare true e viceversa)
 */
 
+// vue
+
+const { createApp } = Vue;
+
+createApp ( {
+    data () {
+        return {
+            msg : "ciao sono un gattino"
+        }
+    }
+}).mount ("#list-container");
+
+
