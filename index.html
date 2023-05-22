@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>to do list</title>
 </head>
@@ -19,22 +20,25 @@
         <!-- input of te items -->
         <div id="input-container">
             <input type="text" name="test" id="test">
-            <button> submit </button>
+            <button> aggiungi </button>
         </div>
 
         <!-- showing the list -->
         <div id="list-container">
             <ul>
-                <li>
-                    uno
+                <li class="task-is-done">
+                    <span> uno</span>
+                    <i class="fa-regular fa-circle-xmark"></i>
                 </li>
 
                 <li>
-                    due
+                    <span> due</span>
+                    <i class="fa-regular fa-circle-xmark"></i>
                 </li>
 
                 <li>
-                    tre
+                    <span> tre</span>
+                    <i class="fa-regular fa-circle-xmark"></i>
                 </li>
             </ul>
         </div>
