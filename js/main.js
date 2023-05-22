@@ -28,6 +28,24 @@ const { createApp } = Vue;
 createApp ( {
     data () {
         return {
+            items : [
+                {
+                    text : "fare la lavatrice",
+                    status : false
+                },
+                {
+                    text : "fare la doccia",
+                    status : true
+                },
+                {
+                    text : "fare una passeggiata",
+                    status : true
+                },
+                {
+                    text : "fare merenda",
+                    status : false
+                },
+            ],
             msg : "ciao sono un gattino"
         }
     }

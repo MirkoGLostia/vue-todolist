@@ -26,18 +26,13 @@
         <!-- showing the list -->
         <div id="list-container">
             <ul>
-                <li class="task-is-done">
-                    <span> {{msg}} </span>
+                <li v-for="(item, ind) in items" :class="item.status ? 'task-is-done' : ''">
+                    <span> {{item.text}} </span>
                     <i class="fa-regular fa-circle-xmark"></i>
                 </li>
 
                 <li>
                     <span> due </span>
-                    <i class="fa-regular fa-circle-xmark"></i>
-                </li>
-
-                <li>
-                    <span> tre </span>
                     <i class="fa-regular fa-circle-xmark"></i>
                 </li>
             </ul>
