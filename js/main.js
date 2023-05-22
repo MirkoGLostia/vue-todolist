@@ -53,21 +53,39 @@ createApp ( {
     methods: {
         addTaskToDo() {
 
-            const newItem = {
-                text : this.newTask,
-                status : false
-            };
+            if (this.newTask !== '') {
+                const newItem = {
+                    text : this.newTask,
+                    status : false
+                };
+    
+                this.items.unshift(newItem);
+    
+                this.newTask = '';
+            }
 
-            this.items.unshift(newItem);
+        },
 
-            this.newTask = '';
+        taskDone(ind) {
+
+            if (this.items[ind].status === false) {
+                
+                this.items[ind].status = true;
+
+            }
+            else {
+
+                this.items[ind].status = false;
+
+            }
+
 
         },
 
         removeTask(ind) {
 
             this.items.splice(ind, 1);
-            
+
         }
 
     }
