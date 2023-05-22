@@ -19,8 +19,9 @@
     <main id="main-container">
         <!-- input of te items -->
         <div id="input-container">
-            <input type="text" name="test" id="test">
-            <button> aggiungi </button>
+            <input type="text" placeholder="nuova task" v-model="newTask" @keyup.enter="addTaskToDo">
+
+            <button type="button" @click="addTaskToDo"> aggiungi </button>
         </div>
 
         <!-- showing the list -->

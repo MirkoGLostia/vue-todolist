@@ -28,6 +28,7 @@ const { createApp } = Vue;
 createApp ( {
     data () {
         return {
+            newTask : '',
             items : [
                 {
                     text : "fare la lavatrice",
@@ -46,9 +47,24 @@ createApp ( {
                     status : false
                 },
             ],
-            msg : "ciao sono un gattino"
         }
+    },
+
+    methods: {
+        addTaskToDo() {
+
+            const newItem = {
+                text : this.newTask,
+                status : false
+            };
+
+            this.items.unshift(newItem);
+
+            this.newTask = '';
+
+        },
     }
-}).mount ("#list-container");
+    
+}).mount ("#main-container");
 
 
