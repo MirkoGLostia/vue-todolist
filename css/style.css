@@ -6,7 +6,48 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 
 
+/******
+ *HEAD*
+ ******/
+
+#title-container {
+    margin: 100px auto;
+    text-align: center;
+}
+
+
+
+/******
+ *MAIN*
+ ******/
+
+#main-container {
+    text-align: center;
+    font-size: 24px;
+}
+
+#main-container > div {
+    margin: 0 auto;
+    width: 700px;
+}
+
+#input-container {
+    padding-bottom: 50px;
+}
+
+#list-container {
+    line-height: 30px;
+    text-align: left;
+}
+
+#list-container li {
+    background-color: bisque;
+    border-radius: 50px;
+    margin: 20px;
+    padding: 10px;
+}
