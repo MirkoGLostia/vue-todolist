@@ -63,6 +63,13 @@ createApp ( {
             this.newTask = '';
 
         },
+
+        removeTask(ind) {
+
+            this.items.splice(ind, 1);
+            
+        }
+
     }
     
 }).mount ("#main-container");
