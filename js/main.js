@@ -29,24 +29,7 @@ createApp ( {
     data () {
         return {
             newTask : '',
-            items : [
-                {
-                    text : "fare la lavatrice",
-                    status : false
-                },
-                {
-                    text : "fare la doccia",
-                    status : true
-                },
-                {
-                    text : "fare una passeggiata",
-                    status : true
-                },
-                {
-                    text : "fare merenda",
-                    status : false
-                },
-            ],
+            items : [],
         }
     },
 

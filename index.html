@@ -26,10 +26,13 @@
 
         <!-- showing the list -->
         <div id="list-container">
+            <h2 v-if="items.length === 0"> 
+                No Tasks Left 
+            </h2>
             <ul>
-                <li v-for="(item, ind) in items" :class="item.status ? 'task-is-done' : ''" @click="taskDone(ind)">
+                <li v-for="(item, ind) in items" :class="item.status ? 'task-is-done' : ''" @click.stop="taskDone(ind)">
                     <span > {{item.text}} </span>
-                    <i class="fa-regular fa-circle-xmark" @click="removeTask(ind)"></i>
+                    <i class="fa-regular fa-circle-xmark" @click.stop="removeTask(ind)"></i>
                 </li>
             </ul>
         </div>
